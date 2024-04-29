@@ -34,7 +34,7 @@ Este trabalho foi desenvolvido como parte de um processo seletivo no qual o obje
 
 ## Orientações:
 - O projeto possui integração com Swagger disponível, portanto, é possível valida-lo através das rotas correspondentes;
-- O desenho tecnico da solução e de suas integrações segue disponívle [nesta rota]();
+- O desenho tecnico da solução e de suas integrações segue disponível [nesta rota](https://github.com/caiodepaulasilva/Spike-Verity-BancoCarrefour/blob/main/Diagrama-Verity-BancoCarrefour.drawio.png);
 - O projeto atende ao padrão de microsserviços, dessa maneira as chamadas são direcionadas para cada serviço (*report* e *releases*) através do **ocelot**, incluindo no projeto API;
 
 ## Execução
