@@ -15,9 +15,10 @@ Este trabalho foi desenvolvido como parte de um processo seletivo no qual o obje
 - Domínio da construção de testes unitários
 - Domínio da capacidade analitica, de abstração e de construção de um algoritmo que reflita as boas práticas de programção e o uso razoável da linguagém C# para construção de APIs.
 
-**Anexo**: O exerício proposto consta neste documento: [desafio-teste.md](https://github.com/caiodepaulasilva/Spike-Verity-BancoCarrefour/files/15140171/desafio-teste.md)
+**Anexos**:
+- O exerício proposto consta neste documento: [desafio-teste.md](https://github.com/caiodepaulasilva/Spike-Verity-BancoCarrefour/files/15140171/desafio-teste.md)
+- O desenho tecnico da solução e de suas integrações segue disponível [nesta rota](https://github.com/caiodepaulasilva/Spike-Verity-BancoCarrefour/blob/main/Diagrama-Verity-BancoCarrefour.drawio.png);
 <br><br>
-
 
 ## Requerimentos
 
@@ -33,9 +34,8 @@ Este trabalho foi desenvolvido como parte de um processo seletivo no qual o obje
 - API Gateway (Ocelot)
 
 ## Orientações:
-- O projeto possui integração com Swagger disponível, portanto, é possível valida-lo através das rotas correspondentes;
-- O desenho tecnico da solução e de suas integrações segue disponível [nesta rota](https://github.com/caiodepaulasilva/Spike-Verity-BancoCarrefour/blob/main/Diagrama-Verity-BancoCarrefour.drawio.png);
-- O projeto atende ao padrão de microsserviços, dessa maneira as chamadas são direcionadas para cada serviço (*report* e *releases*) através do **ocelot**, incluindo no projeto API;
+> [!WARNING]  
+> A orquestração de rotas não está funcionando no momento. Sendo assim, na impossibilidade de utilizar a orquestração configurada através do **ocelot**, de um API Gateway, cada serviço (*report* e *releases*) deve ser consumido e validado separadamente.
 
 ## Execução
 O projeto necessita que suas dependências diretas sejam consideradas antes de sua execução. Sendo neste caso necessário a configuração de um servidor **SQL Server** e de um **API Gateway**.  Uma vez configurados, a execução da API se tornar então possível. Segue passo-a-passo de como configura-los:
@@ -43,7 +43,7 @@ O projeto necessita que suas dependências diretas sejam consideradas antes de s
 **Clonar o projeto:**
 ```
 cd "diretorio de sua preferencia"
-git clone https://github.com/caiodepaulasilva/Prova-Deliver-IT.git
+git clone https://github.com/caiodepaulasilva/Spike-Verity-BancoCarrefour.git
 ```
 **Criar Container SQL Server:**
 1. Abra o arquivo docker-compose.yaml e defina uma senha para o servidor, através da variável *"SA_PASSWORD"*
