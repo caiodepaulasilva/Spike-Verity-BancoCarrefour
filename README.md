@@ -8,7 +8,7 @@
 
 ## Introdução
 
-Este trabalho foi desenvolvido como parte de um processo seletivo no qual o objetivo é construir um projeto de desenvolvimento web em que algumas habilidades possam ser exercitadas. E são elas:
+Este trabalho foi desenvolvido como parte de um processo seletivo no qual o objetivo é construir um projeto de desenvolvimento web em que algumas habilidades possam ser exercitadas. Sendo estas:
 - Domínio de capacidade de escrever a arquitetura de soluções
 - Domínio de capacidade de escrever uma documentação razoável
 - Domínio de construção de projeto apoiado em boas práticas
@@ -17,7 +17,7 @@ Este trabalho foi desenvolvido como parte de um processo seletivo no qual o obje
 
 **Anexos**:
 - O exerício proposto consta neste documento: [desafio-teste.md](https://github.com/caiodepaulasilva/Spike-Verity-BancoCarrefour/files/15140171/desafio-teste.md)
-- O desenho tecnico da solução e de suas integrações segue disponível [nesta rota](https://github.com/caiodepaulasilva/Spike-Verity-BancoCarrefour/blob/main/Diagrama-Verity-BancoCarrefour.drawio.png);
+- O desenho tecnico da solução e de suas integrações segue disponível [nesta rota](https://github.com/caiodepaulasilva/Spike-Verity-BancoCarrefour/blob/main/Diagrama-Verity-BancoCarrefour.drawio.png)
 <br><br>
 
 ## Requerimentos
@@ -64,7 +64,7 @@ docker-compose up -d
 | Trust server certificate       | checked                             |
 
 **Criar a estrutura da base de dados:**
-2. Uma vez no Visual Studio, no terminal PowerShell do Desenvolvedor, na raiz do projeto, digite:
+Uma vez no Visual Studio, no terminal PowerShell do Desenvolvedor, na raiz do projeto, digite:
 ```
 dotnet clean
 dotnet ef migrations add InitialCreate --project Infrastructure --startup-project API-Releases
