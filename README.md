@@ -30,9 +30,15 @@ Este trabalho foi desenvolvido como parte de um processo seletivo no qual o obje
 - SQL Server Managament Studio
 - Docker Desktop
 - IIS Express
+- API Gateway (Ocelot)
+
+## Orientações:
+- O projeto possui integração com Swagger disponível, portanto, é possível valida-lo através das rotas correspondentes;
+- O desenho tecnico da solução e de suas integrações segue disponívle [nesta rota]();
+- O projeto atende ao padrão de microsserviços, dessa maneira as chamadas são direcionadas para cada serviço (*report* e *releases*) através do **ocelot**, incluindo no projeto API;
 
 ## Execução
-O projeto necessita que suas dependências diretas sejam consideradas antes de sua execução. Sendo neste caso necessário apenas a configuração de um servidor **SQL Server**.  Uma vez configurado, a execução da API se tornar então possível. Segue passo-a-passo de como configura-los:
+O projeto necessita que suas dependências diretas sejam consideradas antes de sua execução. Sendo neste caso necessário a configuração de um servidor **SQL Server** e de um **API Gateway**.  Uma vez configurados, a execução da API se tornar então possível. Segue passo-a-passo de como configura-los:
 
 **Clonar o projeto:**
 ```
@@ -43,7 +49,6 @@ git clone https://github.com/caiodepaulasilva/Prova-Deliver-IT.git
 1. Abra o arquivo docker-compose.yaml e defina uma senha para o servidor, através da variável *"SA_PASSWORD"*
 2. Uma vez no Visual Studio, no terminal PowerShell do Desenvolvedor, na raiz do projeto, digite:
 ```
-cd "Infrastructure\Dependencies\SQL Server"
 docker-compose up -d
 ```
 3. Verifique o bom funcionamento através do Docker Desktop. Os containers devem ter sido criados com sucesso e estarão em execução.
@@ -62,13 +67,10 @@ docker-compose up -d
 2. Uma vez no Visual Studio, no terminal PowerShell do Desenvolvedor, na raiz do projeto, digite:
 ```
 dotnet clean
-dotnet ef migrations add InitialCreate --project Infrastructure --startup-project Spike-CasasBahia
+dotnet ef migrations add InitialCreate --project Infrastructure --startup-project API-Releases
 ```
 Após a execução destas instrunções, deve ser possível executar o projeto normalmente.
 
-## Orientações:
-- O projeto possui integração com Swagger disponível, portanto, é possível valida-lo através da [rota correspondente](https://localhost:7182/swagger/index.html);
-- O desenho tecnico da solução e de suas integrações segue disponívle [nesta rota]();
 
 ## Licença
 
