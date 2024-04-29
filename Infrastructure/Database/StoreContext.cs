@@ -10,7 +10,7 @@ public class StoreContext : DbContext
 
     public StoreContext(DbContextOptions<StoreContext> options) : base(options) {}
     
-    public DbSet<Accounting> Accounting { get; set; }
+    public virtual DbSet<Accounting> Accounting { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

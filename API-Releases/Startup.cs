@@ -22,6 +22,7 @@ namespace API_Releases
                 c.SchemaFilter<ExampleSchema>();
             });
             services.AddFluentValidationAutoValidation();
+            services.AddRouting(options => options.LowercaseUrls = true);
 
             services.AddScoped<IAccountingService, AccountingService>();
             services.AddScoped<IValidator<Release>, ReleaseValidator>();

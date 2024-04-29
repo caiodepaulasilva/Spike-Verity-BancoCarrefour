@@ -16,6 +16,7 @@ namespace API_Report
             services.AddSwaggerGen();
 
             services.AddScoped<IReportService, ReportService>();
+            services.AddRouting(options => options.LowercaseUrls = true);
 
             services.AddDbContext<StoreContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));

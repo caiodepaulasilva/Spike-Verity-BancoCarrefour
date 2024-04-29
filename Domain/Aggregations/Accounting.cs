@@ -4,15 +4,15 @@ namespace Domain.Aggregations;
 
 public class Accounting
 {
-    public Guid Id { get; protected set; }
+    public Guid Id { get; set; }
 
-    public string Description { get; private set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
 
-    public DateOnly CreatedAt { get; protected set; }
+    public DateOnly CreatedAt { get; set; }
 
-    public string TransactionType { get; private set; }
+    public string TransactionType { get; set; }
   
-    public decimal Amount { get; private set; }
+    public decimal Amount { get; set; }
 
     public Accounting()
     {
