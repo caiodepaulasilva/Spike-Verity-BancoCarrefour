@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{282189AC-6DCE-4738-B087-C778EC36AAEC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spike_Verity_BancoCarrefour", "Spike-Verity-BancoCarrefour\Spike_Verity_BancoCarrefour.csproj", "{6089A275-968F-46EE-94D1-FBEDAEE8677C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-Releases", "API-Releases\API-Releases.csproj", "{632A6769-08E1-4C6E-A65F-DC98D4F3883D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{22503A56-5AF7-420B-B08B-27D32079A5AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-Report", "API-Report\API-Report.csproj", "{CD3E2880-99E6-466B-ABE6-A969FA4D5E4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +39,18 @@ Global
 		{282189AC-6DCE-4738-B087-C778EC36AAEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{282189AC-6DCE-4738-B087-C778EC36AAEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{282189AC-6DCE-4738-B087-C778EC36AAEC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6089A275-968F-46EE-94D1-FBEDAEE8677C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6089A275-968F-46EE-94D1-FBEDAEE8677C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6089A275-968F-46EE-94D1-FBEDAEE8677C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6089A275-968F-46EE-94D1-FBEDAEE8677C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{632A6769-08E1-4C6E-A65F-DC98D4F3883D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{632A6769-08E1-4C6E-A65F-DC98D4F3883D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{632A6769-08E1-4C6E-A65F-DC98D4F3883D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{632A6769-08E1-4C6E-A65F-DC98D4F3883D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22503A56-5AF7-420B-B08B-27D32079A5AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22503A56-5AF7-420B-B08B-27D32079A5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22503A56-5AF7-420B-B08B-27D32079A5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22503A56-5AF7-420B-B08B-27D32079A5AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD3E2880-99E6-466B-ABE6-A969FA4D5E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD3E2880-99E6-466B-ABE6-A969FA4D5E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD3E2880-99E6-466B-ABE6-A969FA4D5E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD3E2880-99E6-466B-ABE6-A969FA4D5E4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

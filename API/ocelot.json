@@ -1,0 +1,29 @@
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/reports",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 9400
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/reports",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/releases",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 4700
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/releases",
+      "UpstreamHttpMethod": [ "Post" ]
+    }
+  ],
+  "GlobalConfiguration": {}
+}

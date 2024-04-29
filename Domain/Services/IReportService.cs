@@ -1,6 +1,8 @@
-﻿namespace Domain.Services;
+﻿using Domain.Aggregations;
+
+namespace Domain.Services;
 
 public interface IReportService
 {
-    Task<ICollection<Consolidated>> GetConsolidated(int month, int year);
+    Task<ICollection<Consolidated>?> GetConsolidated(DateOnly date);
 }

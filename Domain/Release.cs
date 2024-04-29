@@ -1,12 +1,16 @@
 ﻿using Domain.Enum;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Domain;
 
 public record Release
 {
     public string Description { get; set; } = string.Empty;
-    public TransactionType TransactionType { get; set; }
-    public DateTime CreatedAt { get; set; } = DateTime.Now.Date;
+
+    [JsonConverter(typeof(JsonStringEnumConverter))]
+    public TransactionType TransactionType { get; set; }    
+    
     public decimal Amount { get; set; }
 }
 
