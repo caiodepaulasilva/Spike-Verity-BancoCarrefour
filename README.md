@@ -13,7 +13,7 @@ Este trabalho foi desenvolvido como parte de um processo seletivo no qual o obje
 - Domínio de capacidade de escrever uma documentação razoável
 - Domínio de construção de projeto apoiado em boas práticas
 - Domínio da construção de testes unitários
-- Domínio da capacidade analitica, de abstração e de construção de um algoritmo que reflita as boas práticas de programção e o uso razoável da linguagém C# para construção de APIs.
+- Domínio da capacidade analítica, de abstração e de construção de um algoritmo que reflita as boas práticas de programação e o uso razoável da linguagem C# para construção de APIs.
 
 **Anexos**:
 - O exerício proposto consta neste documento: [desafio-teste.md](https://github.com/caiodepaulasilva/Spike-Verity-BancoCarrefour/files/15140171/desafio-teste.md)
